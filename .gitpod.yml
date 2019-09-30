@@ -1,0 +1,14 @@
+tasks:
+  - init: yarn install
+    command: yarn dev
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint@1.9.1:YVcwmzKVVl+zZ+wMB02GjQ==
+    - octref.vetur@0.22.3:Mwv282XMv00pVVOQeZ6Ngg==
+    - formulahendry.auto-rename-tag@0.1.0:/DaYBGQJ0OJXTfLl4zwBLA==
+    - esbenp.prettier-vscode@2.3.0:1F0Pvb/ORZ/T+b60LIMs8w==
+    - CoenraadS.bracket-pair-colorizer@1.0.61:fqPT1sJEqaEdrfXeYbdW+A==
+    - ionutvmi.path-autocomplete@1.13.3:XzX3IFyeQJx3JGiFjNXD2g==
+    - PKief.material-icon-theme@3.9.0:upPIUp5eiTzsTBH+jH4oUQ==
+    - dracula-theme.theme-dracula@2.18.0:5UakjM/QUG0GDjz+uGZNjw==
