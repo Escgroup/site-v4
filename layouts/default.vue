@@ -11,3 +11,9 @@ export default {
     components: { Header },
 };
 </script>
+
+<style scoped>
+div {
+    font-family: "M PLUS Rounded 1c";
+}
+</style>

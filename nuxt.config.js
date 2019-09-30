@@ -17,7 +17,13 @@ export default {
                 content: process.env.npm_package_description || "",
             },
         ],
-        link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+        link: [
+            {
+                rel: "stylesheet",
+                href:
+                    "https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c",
+            },
+        ],
     },
     /*
      ** Customize the progress-bar color
