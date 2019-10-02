@@ -48,6 +48,6 @@
     background-blend-mode: lighten;
 }
 #bg-hwg {
-    background-color: #e9ecef;
+    background-color: #a7babb;
 }
 </style>
