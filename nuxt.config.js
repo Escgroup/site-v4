@@ -21,7 +21,7 @@ export default {
             {
                 rel: "stylesheet",
                 href:
-                    "https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c",
+                    "https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap",
             },
         ],
     },
@@ -32,7 +32,7 @@ export default {
     /*
      ** Global CSS
      */
-    css: [],
+    css: ["@/assets/css/main.css"],
     /*
      ** Plugins to load before mounting the App
      */

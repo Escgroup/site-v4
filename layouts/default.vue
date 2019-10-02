@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div id="default" class="text-secondary">
         <Header />
-        <div class="main">
+        <div id="main">
             <Nuxt />
         </div>
         <Footer />
@@ -16,11 +16,13 @@ export default {
 };
 </script>
 
-<style scoped>
-div {
-    font-family: "M PLUS Rounded 1c";
+<style>
+#default {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    font-feature-settings: "palt";
 }
-.main {
+#main {
     height: 100vh;
 }
 </style>
