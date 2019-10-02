@@ -21,10 +21,10 @@
 
         <div id="bg-hwg" class="mt-5 rounded">
             <div class="p-4 mx-3 clearfix">
-                <p class="h2">コミュニティ</p>
+                <p class="h2">コミュニティー</p>
                 <div class="h4 mt-3">
                     <p>
-                        何かから逃げ出したいと思った時あなたのそばにいるコミュニティです
+                        何かから逃げ出したいと思った時あなたのそばにいるコミュニティーです
                     </p>
                     <p>ぜひ参加してみてください</p>
                 </div>
@@ -33,7 +33,7 @@
                     variant="outline-primary"
                     class="mt-5 d-block"
                 >
-                    コミュニティ一覧
+                    コミュニティー一覧
                 </b-button>
             </div>
         </div>
