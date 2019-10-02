@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <header>
         <b-navbar toggleable="lg">
             <nuxt-link to="/">
                 <b-navbar-brand>[Esc] Group site</b-navbar-brand>
@@ -25,5 +25,5 @@
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
-    </div>
+    </header>
 </template>

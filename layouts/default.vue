@@ -1,9 +1,9 @@
 <template>
     <div id="default" class="text-secondary">
         <Header />
-        <div id="main">
+        <main>
             <Nuxt />
-        </div>
+        </main>
         <Footer />
     </div>
 </template>
@@ -22,7 +22,7 @@ export default {
     line-height: 1.7;
     font-feature-settings: "palt";
 }
-#main {
+main {
     height: 100vh;
 }
 </style>
