@@ -1,8 +1,8 @@
 <template>
-    <div class="mt-5 pt-5 text-dark mx-4">
+    <div class="mt-5 text-dark mx-4">
         <div class="text-center">
-            <p class="h2">インターネット上の脱出口</p>
-            <p class="h1">[Esc]</p>
+            <p class="title h2">インターネット上の脱出口</p>
+            <p class="name h1">[Esc]</p>
         </div>
 
         <div id="bg-net" class="mt-5 rounded">
@@ -15,7 +15,7 @@
                         このグループは何かから逃げ出したいなと思ったときの脱出口、憩いの場のような場所を目指しています。
                     </p>
                 </b-col>
-                <b-col class="pb-5" sm />
+                <b-col sm />
             </b-row>
         </div>
 
@@ -41,6 +41,14 @@
 </template>
 
 <style scoped>
+.title {
+    padding-bottom: 0.5em;
+    border-bottom: 0.2em solid #79f134;
+}
+.name {
+    font-size: 4em;
+    /* text-shadow: 0 0 10px #00d9ff; */
+}
 #bg-net {
     background-image: url("~assets/img/network.jpg");
     background-size: auto;
@@ -48,6 +56,6 @@
     background-blend-mode: lighten;
 }
 #bg-hwg {
-    background-color: #a7babb;
+    background-color: #64d1ec56;
 }
 </style>
