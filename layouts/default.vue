@@ -22,9 +22,7 @@ export default {
     line-height: 1.7;
     font-feature-settings: "palt";
 }
-div {
-    main {
-        min-height: 80vh;
-    }
+main {
+    min-height: 80vh;
 }
 </style>

@@ -14,7 +14,7 @@
                             <nuxt-link to="/">Home</nuxt-link>
                         </b-nav-text>
                         <b-nav-text>
-                            <nuxt-link to="/Community">Community</nuxt-link>
+                            <nuxt-link to="/community">Community</nuxt-link>
                         </b-nav-text>
                     </b-navbar-nav>
 
