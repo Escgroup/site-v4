@@ -5,7 +5,7 @@
             <p class="name h1">[Esc]</p>
         </div>
 
-        <div id="bg-net" class="mt-5 rounded">
+        <BgImg img="/img/network.jpg" class="mt-5 rounded">
             <b-row class="mx-3 p-4">
                 <b-col class="text-left" sm>
                     <p class="h2">[Esc] とは</p>
@@ -17,7 +17,7 @@
                 </b-col>
                 <b-col sm />
             </b-row>
-        </div>
+        </BgImg>
 
         <div id="bg-hwg" class="mt-5 rounded">
             <div class="p-4 mx-3 clearfix">
@@ -40,6 +40,15 @@
     </div>
 </template>
 
+<script>
+import BgImg from "~/components/bg-img.vue";
+export default {
+    components: {
+        BgImg,
+    },
+};
+</script>
+
 <style lang="postcss" scoped>
 .title {
     padding-bottom: 0.5em;
@@ -48,12 +57,6 @@
 .name {
     font-size: 4em;
     /* text-shadow: 0 0 10px #00d9ff; */
-}
-#bg-net {
-    background-image: url("~assets/img/network.jpg");
-    background-size: auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    background-blend-mode: lighten;
 }
 #bg-hwg {
     background-color: #64d1ec56;

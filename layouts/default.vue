@@ -1,7 +1,7 @@
 <template>
     <div id="default" class="text-secondary">
         <Header />
-        <main>
+        <main class="mx-5">
             <Nuxt />
         </main>
         <Footer />
