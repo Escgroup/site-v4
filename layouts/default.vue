@@ -16,13 +16,15 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss" scoped>
 #default {
     font-family: "Noto Sans JP", sans-serif;
     line-height: 1.7;
     font-feature-settings: "palt";
 }
-main {
-    min-height: 80vh;
+div {
+    main {
+        min-height: 80vh;
+    }
 }
 </style>
