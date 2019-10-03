@@ -40,7 +40,7 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .title {
     padding-bottom: 0.5em;
     border-bottom: 0.2em solid #79f134;
