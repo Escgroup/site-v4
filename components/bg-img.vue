@@ -1,6 +1,6 @@
 <template>
-    <div id="cp-bg-img" :style="bg">
-        <slot class="text-dark"></slot>
+    <div id="cp-bg-img" class="text-dark" :style="bg">
+        <slot></slot>
     </div>
 </template>
 

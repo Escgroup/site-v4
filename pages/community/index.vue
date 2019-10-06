@@ -1,15 +1,22 @@
 <template>
     <div>
         <h1 class="mt-3">コミュニティー</h1>
-        <b-row class="mt-5 mx-3">
+        <b-row class="mt-5">
             <b-col v-for="list in lists" :key="list" sm>
-                <BgImg class="m-2 p-2 rounded" :img="path">
+                <BgImg class="p-3 m-2 rounded" :img="path">
                     <h4>
                         {{ list.name }}
                         <b-badge v-if="list.cos" pill variant="info">
                             近日公開
                         </b-badge>
                     </h4>
+                    <p>{{ list.text }}</p>
+                    <b-button :disabled="list.cos">
+                        参加する
+                    </b-button>
+                    <b-button :disabled="list.cos">
+                        詳しく見る
+                    </b-button>
                 </BgImg>
             </b-col>
         </b-row>
@@ -24,7 +31,20 @@ export default {
     },
     data() {
         return {
-            lists: [{ name: "Discord" }, { name: "LINE", cos: true }],
+            lists: [
+                {
+                    name: "Discord",
+                    cos: false,
+                    text:
+                        "Discord上のコミュニティです。ゲーム、プログラムを中心に色々な活動をしています。基本的に毎日VCしています。",
+                },
+                {
+                    name: "LINE",
+                    cos: true,
+                    text:
+                        "作成、用意中です。公開出来たらDiscordのコミュニティの方で告知させていただきます。",
+                },
+            ],
             path: "/img/ai-think.jpg",
         };
     },
