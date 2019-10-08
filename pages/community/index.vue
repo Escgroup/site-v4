@@ -4,8 +4,8 @@
         <b-row class="mt-5">
             <b-col
                 v-for="list in lists"
-                style="position: relative;"
                 :key="list"
+                style="position: relative;"
                 md="6"
             >
                 <BgImg class="p-2 rounded" :img="path">
