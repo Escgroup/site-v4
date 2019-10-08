@@ -1,68 +1,64 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        site
-      </h1>
-      <h2 class="subtitle">
-        My badass Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <div class="mt-5 text-dark mx-4">
+        <div class="text-center">
+            <p class="title h2">インターネット上の脱出口</p>
+            <p class="name h1">[Esc]</p>
+        </div>
+
+        <BgImg img="/img/network.jpg" class="mt-5 rounded">
+            <b-row class="mx-3 p-4">
+                <b-col class="text-left" sm>
+                    <p class="h2">[Esc] とは</p>
+                    <p class="h4 mt-3 justify">
+                        Escape（エスケープ）の略です。
+                        Escapeは日本語で「逃げる」を表します。
+                        このグループは何かから逃げ出したいなと思ったときの脱出口、憩いの場のような場所を目指しています。
+                    </p>
+                </b-col>
+                <b-col sm />
+            </b-row>
+        </BgImg>
+
+        <div id="bg-hwg" class="mt-5 rounded">
+            <div class="p-4 mx-3 clearfix">
+                <p class="h2">コミュニティー</p>
+                <div class="h4 mt-3">
+                    <p>
+                        何かから逃げ出したいと思った時あなたのそばにいるコミュニティーです
+                    </p>
+                    <p>ぜひ参加してみてください</p>
+                </div>
+                <b-button
+                    href="/community"
+                    variant="outline-primary"
+                    class="mt-5 d-block"
+                >
+                    コミュニティー一覧
+                </b-button>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import BgImg from "~/components/bg-img.vue";
 export default {
-  components: {
-    Logo
-  }
-}
+    components: {
+        BgImg,
+    },
+};
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+<style lang="postcss" scoped>
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+    padding-bottom: 0.5em;
+    border-bottom: 0.2em solid #79f134;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.name {
+    font-size: 4em;
+    /* text-shadow: 0 0 10px #00d9ff; */
 }
-
-.links {
-  padding-top: 15px;
+#bg-hwg {
+    background-color: #64d1ec56;
 }
 </style>
