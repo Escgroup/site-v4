@@ -7,7 +7,7 @@
 
         <BgImg img="/img/network.jpg" class="mt-5 rounded">
             <b-row class="mx-3 p-4">
-                <b-col class="text-left" sm>
+                <b-col class="text-left" md>
                     <p class="h2">[Esc] とは</p>
                     <p class="h4 mt-3 justify">
                         Escape（エスケープ）の略です。
@@ -15,7 +15,7 @@
                         このグループは何かから逃げ出したいなと思ったときの脱出口、憩いの場のような場所を目指しています。
                     </p>
                 </b-col>
-                <b-col sm />
+                <b-col md />
             </b-row>
         </BgImg>
 
@@ -28,13 +28,12 @@
                     </p>
                     <p>ぜひ参加してみてください</p>
                 </div>
-                <b-button
-                    href="/community"
-                    variant="outline-primary"
-                    class="mt-5 d-block"
-                >
-                    コミュニティー一覧
-                </b-button>
+
+                <nuxt-link to="/community" class="mt-5 d-block">
+                    <b-button variant="outline-primary" style="width:100%;">
+                        コミュニティー一覧
+                    </b-button>
+                </nuxt-link>
             </div>
         </div>
     </div>
