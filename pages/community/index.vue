@@ -20,7 +20,7 @@
                         <p>{{ list.text }}</p>
                         <div class="p-3"></div>
                         <div style="position: absolute; bottom: 0.5em;">
-                            <b-button :disabled="list.cos">
+                            <b-button :disabled="list.cos" :href="list.invite">
                                 参加する
                             </b-button>
                             <nuxt-link :to="list.link[0]" append>
@@ -51,6 +51,7 @@ export default {
                     text:
                         "Discord上のコミュニティです。ゲーム、プログラムを中心に色々な活動をしています。基本的に毎日VCしています。",
                     link: ["discord"],
+                    invite: "https://discord.gg/T4e5xbP",
                 },
                 {
                     name: "LINE",
@@ -58,6 +59,7 @@ export default {
                     text:
                         "作成、用意中です。公開出来たらDiscordのコミュニティの方で告知させていただきます。",
                     link: ["line"],
+                    invite: "none",
                 },
             ],
             path: "/img/ai-think.jpg",

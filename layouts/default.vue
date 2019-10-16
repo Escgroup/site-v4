@@ -23,6 +23,6 @@ export default {
     font-feature-settings: "palt";
 }
 main {
-    min-height: 80vh;
+    min-height: 95vh;
 }
 </style>
