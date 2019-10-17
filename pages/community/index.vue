@@ -6,6 +6,7 @@
                 v-for="list in lists"
                 :key="list"
                 style="position: relative;"
+                class="mt-2"
                 md="6"
             >
                 <BgImg class="p-2 rounded" :img="path">
@@ -17,14 +18,16 @@
                             </b-badge>
                         </h4>
                         <p>{{ list.text }}</p>
-                        <div style="height:2em;"></div>
+                        <div class="p-3"></div>
                         <div style="position: absolute; bottom: 0.5em;">
-                            <b-button :disabled="list.cos">
+                            <b-button :disabled="list.cos" :href="list.invite">
                                 参加する
                             </b-button>
-                            <b-button :disabled="list.cos">
-                                詳しく見る
-                            </b-button>
+                            <nuxt-link :to="list.link[0]" append>
+                                <b-button :disabled="list.cos">
+                                    詳しく見る
+                                </b-button>
+                            </nuxt-link>
                         </div>
                     </div>
                 </BgImg>
@@ -47,12 +50,16 @@ export default {
                     cos: false,
                     text:
                         "Discord上のコミュニティです。ゲーム、プログラムを中心に色々な活動をしています。基本的に毎日VCしています。",
+                    link: ["discord"],
+                    invite: "https://discord.gg/T4e5xbP",
                 },
                 {
                     name: "LINE",
                     cos: true,
                     text:
                         "作成、用意中です。公開出来たらDiscordのコミュニティの方で告知させていただきます。",
+                    link: ["line"],
+                    invite: "none",
                 },
             ],
             path: "/img/ai-think.jpg",
