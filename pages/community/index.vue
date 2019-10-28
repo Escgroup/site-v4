@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="mt-3">コミュニティー</h1>
-        <b-row class="mt-5">
+        <b-row class="mt-5" align-content="center">
             <b-col
                 v-for="list in lists"
                 :key="list"
@@ -31,6 +31,11 @@
                         </div>
                     </div>
                 </BgImg>
+            </b-col>
+            <b-col class="mt-5 text-center">
+                <nuxt-link to="/community/rule">
+                    コミュニティーのルール
+                </nuxt-link>
             </b-col>
         </b-row>
     </div>
