@@ -25,7 +25,7 @@
                     </b-list-group-item>
                 </b-list-group>
             </b-col>
-            <b-col cols="8">
+            <b-col lg="8">
                 <div id="prohibited">
                     <h2>禁止事項</h2>
                     <ul class="mt-3">
