@@ -24,7 +24,7 @@
                                 参加する
                             </b-button>
                             <nuxt-link :to="list.link[0]" append>
-                                <b-button :disabled="list.cos">
+                                <b-button :disabled="list.name === 'LINE'">
                                     詳しく見る
                                 </b-button>
                             </nuxt-link>
@@ -60,11 +60,10 @@ export default {
                 },
                 {
                     name: "LINE",
-                    cos: true,
-                    text:
-                        "作成、用意中です。公開出来たらDiscordのコミュニティの方で告知させていただきます。",
+                    cos: false,
+                    text: "雑談メインのLINE OPEN-CHATです。",
                     link: ["line"],
-                    invite: "none",
+                    invite: "https://line.me/ti/g2/ReEwkTFsydWLJTWEl8vY1A",
                 },
             ],
             path: "/img/ai-think.jpg",
