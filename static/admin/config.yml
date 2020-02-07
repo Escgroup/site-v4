@@ -9,6 +9,7 @@ public_folder: /img
 
 collections:
   - name: "Community"
+    label: "Community"
     format: "json"
     folder: "assets/content/community"
     create: true
