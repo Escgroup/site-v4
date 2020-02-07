@@ -13,17 +13,14 @@
                     <div>
                         <h4>
                             {{ list.name }}
-                            <b-badge v-if="list.cos" pill variant="info">
-                                近日公開
-                            </b-badge>
                         </h4>
-                        <p>{{ list.text }}</p>
+                        <p>{{ list.description }}</p>
                         <div class="p-3"></div>
                         <div style="position: absolute; bottom: 0.5em;">
-                            <b-button :disabled="list.cos" :href="list.invite">
+                            <b-button :href="list.inviteUrl">
                                 参加する
                             </b-button>
-                            <nuxt-link :to="list.link[0]" append>
+                            <nuxt-link :to="list.name" append>
                                 <b-button :disabled="list.name === 'LINE'">
                                     詳しく見る
                                 </b-button>
@@ -43,29 +40,14 @@
 
 <script>
 import BgImg from "~/components/bg-img.vue";
+const list = require.context("../../assets/content/community/", false, /json$/);
 export default {
     components: {
         BgImg,
     },
     data() {
         return {
-            lists: [
-                {
-                    name: "Discord",
-                    cos: false,
-                    text:
-                        "Discord上のコミュニティです。ゲーム、プログラムを中心に色々な活動をしています。基本的に毎日VCしています。",
-                    link: ["discord"],
-                    invite: "https://discord.gg/T4e5xbP",
-                },
-                {
-                    name: "LINE",
-                    cos: false,
-                    text: "雑談メインのLINE OPEN-CHATです。",
-                    link: ["line"],
-                    invite: "https://line.me/ti/g2/ReEwkTFsydWLJTWEl8vY1A",
-                },
-            ],
+            lists: list.keys().map(cm => list(cm)),
             path: "/img/ai-think.jpg",
         };
     },

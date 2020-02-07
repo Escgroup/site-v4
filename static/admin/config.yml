@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: cms
+
+locale: "ja"
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "Community"
+    label: "Community"
+    format: "json"
+    folder: "assets/content/community"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "invite URL", name: "inviteUrl", widget: "string" }
