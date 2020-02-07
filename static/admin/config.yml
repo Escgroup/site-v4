@@ -16,4 +16,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "inviteUrl", name: "body", widget: "string" }
+      - { label: "invite URL", name: "inviteUrl", widget: "string" }
