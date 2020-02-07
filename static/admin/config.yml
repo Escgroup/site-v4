@@ -14,6 +14,6 @@ collections:
     folder: "assets/content/community"
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "invite URL", name: "inviteUrl", widget: "string" }
