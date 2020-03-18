@@ -54,12 +54,19 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "nuxt-i18n",
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  i18n: {
+    locales: [
+      { code: "ja", iso: "ja_JP" },
+      { code: "en", iso: "en-US" },
+    ],
+  },
   /*
    ** Build configuration
    */
