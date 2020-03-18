@@ -18,7 +18,7 @@ module.exports = {
     // add your custom rules here
     rules: {
         "prettier/prettier": ["error", require("./.prettierrc.js")],
-        "vue/html-indent": ["error", 4],
+        "vue/html-indent": ["error", 2],
         semi: ["error", "always"],
         "object-curly-spacing": 2,
     },
