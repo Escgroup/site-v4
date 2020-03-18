@@ -18,12 +18,33 @@
             </b-nav-text>
           </b-navbar-nav>
 
-          <b-nav-item-dropdown text="Lang" right disabled>
-            <b-dropdown-item href="#">JA</b-dropdown-item>
-            <b-dropdown-item href="#">EN</b-dropdown-item>
+          <b-nav-item-dropdown text="Lang" right>
+            <b-dropdown-item
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              @click="changeLocale(locale.code)"
+            >
+              {{ locale.name }}
+            </b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
   </header>
 </template>
+
+<script>
+export default {
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale);
+    },
+  },
+  methods: {
+    changeLocale(code) {
+      this.$i18n.setLocaleCookie(code);
+      location.reload();
+    },
+  },
+};
+</script>

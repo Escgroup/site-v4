@@ -67,14 +67,16 @@ export default {
    */
   i18n: {
     locales: [
-      { code: "ja", iso: "ja_JP" },
-      { code: "en", iso: "en-US" },
+      { name: "Japanese", code: "ja", iso: "ja_JP" },
+      { name: "English", code: "en", iso: "en-US" },
     ],
     defaultLocale: "ja",
     vueI18nLoader: true,
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",
+      alwaysRedirect: true,
+      fallbackLocale: "en",
     },
   },
   /*
