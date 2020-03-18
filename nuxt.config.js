@@ -49,6 +49,8 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    // Doc: https://https://nuxt-community.github.io/nuxt-i18n
+    "nuxt-i18n",
     // Doc: https://bootstrap-vue.js.org/docs/
     "bootstrap-vue/nuxt",
     // Doc: https://axios.nuxtjs.org/usage
@@ -60,6 +62,23 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  /*
+   * nuxt-i18n
+   */
+  i18n: {
+    locales: [
+      { name: "Japanese", code: "ja", iso: "ja_JP" },
+      { name: "English", code: "en", iso: "en-US" },
+    ],
+    defaultLocale: "ja",
+    vueI18nLoader: true,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      alwaysRedirect: true,
+      fallbackLocale: "en",
+    },
+  },
   /*
    ** Build configuration
    */
