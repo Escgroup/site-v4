@@ -14,7 +14,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "インターネットの脱出口[Esc]公式サイト",
+        content: "[Esc] Group",
       },
     ],
     link: [
